@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Pais } from 'src/app/Model';
 
 @Component({
-  selector: 'app-Inicio',
-  templateUrl: './Inicio.component.html',
-  styleUrls: ['./Inicio.component.css']
+  selector: 'app-Pantalla_1',
+  templateUrl: './Pantalla_1.component.html',
+  styleUrls: ['./Pantalla_1.component.css']
 })
-export class InicioComponent implements OnInit {
+export class Pantalla_1Component implements OnInit {
   filtroP:Pais[]| null = null;
   pais:Pais[]=[
     new Pais('Inglaterra', [{ Nombre: 'Londres' }, { Nombre: 'Manchester' }]),

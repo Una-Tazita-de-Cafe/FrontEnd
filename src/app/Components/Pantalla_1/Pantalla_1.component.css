@@ -1,0 +1,38 @@
+
+.form-group {
+    margin-bottom: 20px; 
+  }
+  
+  .form-label {
+    font-size: 1rem; 
+  }
+  
+  input.form-control {
+    font-size: 1.25rem; 
+  }
+  
+  .square {
+    width: 75vw;
+    height: 75vh;
+    border: 1px solid black; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: white !important;
+    border-radius: 15px; 
+    position: relative;
+  }
+  
+  h3.position-absolute.top-left {
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  @media (max-width: 576px) {
+    .square {
+      width: 90vw;
+      height: 90vh;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+
+<!--<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+  <div class="text-center">
+      
+        <app-Ciudad  [lista]="pais" (nombreSeleccionado)="NombreOctenido($event)"></app-Ciudad> 
+     
+      <div *ngIf="filtroP!=null">
+        <div>
+          <app-OctenerCiudad  *ngFor="let p of filtroP" [lista]="p"></app-OctenerCiudad>
+        </div>
+        <div>
+          <button class="btn btn-primary" routerLink="Presupuesto">Siguiente</button>
+        </div>
+      </div>
+  </div>
+</div> -->
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="square text-center d-flex flex-column justify-content-center align-items-center position-relative">
+    <h3 class="position-absolute top-left">Viaje</h3>
+
+    <div class="form-group mb-4">
+      <label for="presupuesto" class="form-label">Pais</label>
+      <app-Ciudad  [lista]="pais" (nombreSeleccionado)="NombreOctenido($event)"></app-Ciudad> 
+
+    </div>
+
+    <div *ngIf="filtroP != null" class="form-group mb-4" >
+      <label for="otro" class="form-label">Ciudad</label>
+      <app-OctenerCiudad *ngFor="let p of filtroP" [lista]="p"></app-OctenerCiudad>
+      <div >
+        <div class="mt-4">
+          <button class="btn btn-primary btn-lg mx-2" routerLink="Presupuesto">Siguiente</button>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+  </div>
+</div>
+
