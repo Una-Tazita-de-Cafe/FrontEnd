@@ -1,0 +1,18 @@
+
+
+    <!--<a  (click)="SeleccionarNombre(lista.Nombre)">
+        <h3> {{lista?.Nombre}}</h3>
+    </a>
+    -->
+    <label for=""> Pais</label>
+    <div>
+        <select class="form-control" [(ngModel)]="opcionSeleccionada" (change)="seleccionarOpcion()">
+          <option value="">Selecciona una opción</option>
+          <option *ngFor="let n of lista" [value]="n.Nombre">{{ n.Nombre }}</option>
+        </select>
+      </div>
+ <!--
+    <div *ngFor="let l of lista?.Ciudades">
+        {{l.Nombre}}
+    </div>
+ -->

@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { Pais } from './Model';
+import { Component, OnInit } from '@angular/core';
+import { Pais } from 'src/app/Model';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-Inicio',
+  templateUrl: './Inicio.component.html',
+  styleUrls: ['./Inicio.component.css']
 })
-export class AppComponent {
-  title = 'FrontEnd';
+export class InicioComponent implements OnInit {
   filtroP:Pais[]| null = null;
   pais:Pais[]=[
     new Pais('Inglaterra', [{ Nombre: 'Londres' }, { Nombre: 'Manchester' }]),
@@ -19,5 +18,9 @@ export class AppComponent {
     //Implementar api
     this.filtroP=this.pais.filter(p=>p.Nombre==nombre);  
   }
-}
+  constructor() { }
 
+  ngOnInit() {
+  }
+
+}

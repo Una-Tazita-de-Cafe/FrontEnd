@@ -1,0 +1,10 @@
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+  <div class="text-center">
+      
+              <app-Ciudad  [lista]="pais" (nombreSeleccionado)="NombreOctenido($event)"></app-Ciudad> 
+     
+  <div *ngIf="filtroP!=null">
+      <app-OctenerCiudad  *ngFor="let p of filtroP" [lista]="p"></app-OctenerCiudad>
+  </div>
+  </div>
+</div>
